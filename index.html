@@ -31,7 +31,23 @@
               margin-left: 20px;
               
             }
-  
+
+            /* GRAVITY */
+            .falling {
+              position: absolute;
+              animation: fall 2s ease-in forwards;
+            }
+
+            @keyframes fall {
+              0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+              }
+              100% {
+                transform: translateY(100vh) rotate(15deg);
+                opacity: 0;
+              }
+            }
           </style>
     </head>
     <body class="dark">
@@ -1352,5 +1368,20 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/element-in-view.js"></script>
         <script src="js/main.js"></script>
+        
+        <!-- GRAVITY -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+              // Seleccionar todos los elementos de texto y el fondo
+              const elements = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, a, span, li, .single-slider, .slider-shape");
+          
+              // Aplicar la clase 'falling' a todos los elementos de texto y el fondo
+              elements.forEach(el => {
+                el.classList.add("falling");
+              });
+            }, 3000); // 5000 milisegundos = 5 segundos
+          });
+        </script>                
     </body>
 </html>
