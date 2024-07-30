@@ -1434,7 +1434,7 @@ color: #1b2336;
     float: left;
 }
 .call-box .sc a{
-    color: #9C9C9C;
+    color: #FFF;
     margin-right: 5px;
     font-size: 16px;
 font-weight: 700; 
@@ -12556,3 +12556,25 @@ color: #fff;
 .scrollbox2 {
     position: relative;
 }
+
+.call-box {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4px; /* Reduce el espacio superior */
+  padding-bottom: 4px; /* Reduce el espacio inferior */
+}
+
+.call-box .sc {
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* 4 columnas */
+  gap: 10px; /* Ajusta el espacio entre los íconos según sea necesario */
+  justify-items: center; /* Centra los íconos horizontalmente */
+  margin-right: 20px; /* Ajusta la posición hacia la izquierda */
+}
+
+.call-box .sc a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
