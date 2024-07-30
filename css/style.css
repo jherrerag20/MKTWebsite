@@ -12578,3 +12578,15 @@ color: #fff;
   align-items: center;
 }
 
+.brand-area {
+  padding-top: 20px; /* Ajusta este valor según sea necesario */
+  padding-bottom: 30px; /* Ajusta este valor según sea necesario */
+  margin-top: 0; /* Elimina margen superior si existe */
+  margin-bottom: 0; /* Elimina margen inferior si existe */
+}
+
+.single-brand {
+  margin-bottom: 0; /* Asegúrate de que no haya margen inferior en los elementos individuales */
+  padding-top: 0; /* Asegúrate de que no haya padding superior en los elementos individuales */
+  padding-bottom: 0; /* Asegúrate de que no haya padding inferior en los elementos individuales */
+}
